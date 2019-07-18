@@ -45,15 +45,28 @@ color: crimson;
 const StyledP10 = styled.p`
 color: olive;
 `
+const StyledH3 = styled.h3`
+color: white;
+`
+const StyledH1 = styled.h1`
+color: teal;
+border: 5px solid red;
+background-color: silver;
+`
+const StyledDiv = styled.div`
+background-color: black;
+`
+
   return (
-    <div className="App">
-      <p>
-        Hello! Here, you can find a beautiful image from the NASA Website!
-      </p>
+    <StyledDiv className="App">
+      <StyledH3>
+        Hello! Here, you can find a beautiful image from the NASA Website and some interesting facts about The Moon!
+      </StyledH3>
       <PhotoCard title={data.title}
       url={data.url}
       explanation={data.url}/>
-      <h3>Some Awesome Moon Facts!</h3>
+      
+      <StyledH1>Some Awesome Moon Facts!</StyledH1>
       <StyledP1>The Moon is the Earth’s only natural satellite. A natural satellite is a space body that orbits a planet, a planet like object or an asteroid.</StyledP1>
 
       <StyledP2>The average distance from the Moon to the Earth is 384403 kilometres (238857 miles).</StyledP2>
@@ -73,9 +86,9 @@ color: olive;
       <StyledP9>The USA’s NASA Apollo 11 mission in 1969 was the first manned Moon landing.</StyledP9>
 
       <StyledP10>The first person to set foot on the Moon was Neil Armstrong.</StyledP10>
-<p>All facts taken from http://www.sciencekids.co.nz/sciencefacts/space/moon.html</p>  
+<StyledP1>All facts taken from http://www.sciencekids.co.nz/sciencefacts/space/moon.html</StyledP1>  
 
-    </div>
+    </StyledDiv>
   );
 }
 
